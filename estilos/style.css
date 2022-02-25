@@ -1,0 +1,746 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(233, 194, 233);
+}
+
+.grid__index {
+    display: grid;
+    grid-template-areas:
+    
+    "cabeza   cabeza   cabeza"
+    "card     card     card"
+    "diplomas diplomas diplomas"
+    "maps     maps     maps"
+    "pie      pie      pie"
+    ;
+}
+
+header {
+    background-color: violet;
+    grid-area: cabeza;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 98.6%;
+    border: 2px solid;
+}
+.title{
+    font-size: 3.5em;
+    padding: 5px;
+}
+
+.barra__lista {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+    font-weight: bolder;
+}
+.barra__lista a{
+    padding: 1rem;
+    display: block;
+    color: black;
+}
+.lista__margen{
+    margin-left: 10px;
+    border: 2px solid;
+    background-color: bisque;
+}
+li a {
+    text-decoration: none;
+}
+.barra__lista--sub {
+    list-style-type: none;
+    position: absolute;;
+    font-weight: bolder;
+}
+ul ul {
+    position: absolute;
+    display: none;
+}
+ul ul li {
+    display: block;
+    padding-right: 150px;
+    background-color: blanchedalmond;
+    margin: 10px;
+    padding-right: 10px;
+    border: 2px solid;
+    text-align: center;
+}
+ul li:hover ul{
+    display: block;
+}
+li:hover{
+    background-color: rgb(223, 217, 217);
+}
+
+.grid__card {
+    grid-area: card;
+    background-color: rgb(233, 194, 233);
+    display: flex;
+    align-items: center;
+}
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px 5px;
+    margin: 50px 250px 50px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+.card__imagen {
+    width: 650px;
+    height: 350px;
+    margin: 0px 20px;
+    border-radius: 30px; 
+    padding-bottom: 25px;
+}
+
+.grid__diplomas {
+    grid-area: diplomas;
+    padding: 10px;
+    background-color: rgb(233, 194, 233);
+}
+.diplomas__flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-wrap: wrap;
+}
+.diploma__img {
+    border: 2px solid black;
+}
+.formato__titulo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.grid__maps {
+    grid-area: maps;
+    padding: 10px;
+    background-color: rgb(233, 194, 233);
+}
+.ubicacion__maps {
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: wrap;  
+}
+.card__mapa {
+    width: 750px;
+    height: 450px;
+    border-radius: 30px;
+    margin: 50px 1px; 
+}
+.ubicacion__textos {
+    background-color: rgb(231, 243, 233);
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px black solid;
+}
+.ubicacion__titulo {
+    font-size: xxx-large;
+    text-align: center;
+}
+.ubicacion__titulo--extracto {
+    padding: 10px;
+}
+
+footer{
+    grid-area: pie;
+    width: 40%;
+    background-color: violet;
+}
+
+.grid__galeria{
+    display: grid;
+    grid-template-areas:
+
+    "cabeza  cabeza cabeza cabeza"
+    "fotos   fotos  fotos  fotos"
+    "pie     pie    pie    pie"    
+    ;
+}
+
+.galeria__fotos {
+    grid-area: fotos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px 15px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:320px){
+    .grid__index{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "cabeza"
+        "card"
+        "diplomas"
+        "maps"
+        "pie"
+        ;
+    }
+    header{
+        background-color: violet;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: 2px solid;
+    }
+    .title{
+        font-size: 2em;
+        padding: 5px;
+        text-align: center;
+    }
+    .barra__lista {
+        font-size: 1em;
+        list-style-type: none;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        font-weight: bolder;
+    }
+    .barra__lista a{
+        padding: 0.5em;
+        display: block;
+        color: black;
+    }
+    .lista__margen{
+        margin: 1px;
+        border: 2px solid;
+        background-color: bisque;
+    }
+    li a {
+        text-decoration: none;
+    }
+    .barra__lista--sub {
+        list-style-type: none;
+        position: absolute;;
+        font-weight: bolder;
+    }
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+    ul ul li {
+        display: block;
+        padding-right: 150px;
+        background-color: blanchedalmond;
+        margin: 10px;
+        padding-right: 10px;
+        border: 2px solid;
+        text-align: center;
+    }
+    ul li:hover ul{
+        display: block;
+    }
+    li:hover{
+        background-color: rgb(223, 217, 217);
+    }
+    .card {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 25px 5px;
+        margin: 50px 20px 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card__imagen {
+        width: 50px;
+        height: 150px;
+        margin: 0px 20px;
+        border-radius: 30px; 
+        padding-bottom: 25px;
+    }
+    .card__texto {
+        margin: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .diploma__img {
+        border: 2px solid black;
+        height: 150px;
+    }
+    .ubicacion__textos {
+        background-color: rgb(231, 243, 233);
+        border-radius: 10px;
+        padding: 5px;
+        border: 2px black solid;
+    }
+    .grid__maps {
+        grid-area: maps;
+        padding: 10px;
+        background-color: rgb(233, 194, 233);
+    }
+    .card__mapa {
+        width: 300px;
+        height: 150px;
+        border-radius: 30px;
+        margin: 50px 1px; 
+    }
+    .ubicacion__titulo {
+        font-size: xx-large;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:550px){
+    .grid__index{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "cabeza   cabeza"
+        "card     card"
+        "diplomas diplomas"
+        "maps     maps"
+        "pie      pie"
+        ;
+    }
+    header{
+        background-color: violet;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: 2px solid;
+    }
+    .title{
+        font-size: 2em;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .barra__lista {
+        font-size: 1em;
+        list-style-type: none;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        font-weight: bolder;
+    }
+    .barra__lista a{
+        padding: 0.5em;
+        display: block;
+        color: black;
+    }
+    .lista__margen{
+        margin: 1px;
+        border: 2px solid;
+        background-color: bisque;
+    }
+    li a {
+        text-decoration: none;
+    }
+    .barra__lista--sub {
+        list-style-type: none;
+        position: absolute;;
+        font-weight: bolder;
+    }
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+    ul ul li {
+        display: block;
+        padding-right: 150px;
+        background-color: blanchedalmond;
+        margin: 10px;
+        padding-right: 10px;
+        border: 2px solid;
+        text-align: center;
+    }
+    ul li:hover ul{
+        display: block;
+    }
+    li:hover{
+        background-color: rgb(223, 217, 217);
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 25px 5px;
+        margin: 50px 20px 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card__imagen {
+        width: 250px;
+        height: 150px;
+        margin: 0px 20px;
+        border-radius: 30px; 
+        padding-bottom: 25px;
+    }
+    .card__texto {
+        margin: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .diplomas__flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .diploma__img {
+        border: 2px solid black;
+        height: 150px;
+    }
+    .ubicacion__textos {
+        background-color: rgb(231, 243, 233);
+        border-radius: 10px;
+        padding: 5px;
+        border: 2px black solid;
+    }
+    .grid__maps {
+        grid-area: maps;
+        padding: 10px;
+        background-color: rgb(233, 194, 233);
+    }
+    .card__mapa {
+        width: 300px;
+        height: 150px;
+        border-radius: 30px;
+        margin: 50px 1px; 
+    }
+    .ubicacion__titulo {
+        font-size: xx-large;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:718px){
+    .grid__index{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "cabeza   cabeza"
+        "card     card"
+        "diplomas diplomas"
+        "maps     maps"
+        "pie      pie"
+        ;
+    }
+    header{
+        background-color: violet;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: 2px solid;
+    }
+    .title{
+        font-size: 2.5em;
+        padding: 5px;
+        text-align: center;
+    }
+    .barra__lista {
+        font-size: 1em;
+        list-style-type: none;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        font-weight: bolder;
+    }
+    .barra__lista a{
+        padding: 0.5em;
+        display: block;
+        color: black;
+    }
+    .lista__margen{
+        margin: 1px;
+        border: 2px solid;
+        background-color: bisque;
+    }
+    li a {
+        text-decoration: none;
+    }
+    .barra__lista--sub {
+        list-style-type: none;
+        position: absolute;;
+        font-weight: bolder;
+    }
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+    ul ul li {
+        display: block;
+        padding-right: 150px;
+        background-color: blanchedalmond;
+        margin: 10px;
+        padding-right: 10px;
+        border: 2px solid;
+        text-align: center;
+    }
+    ul li:hover ul{
+        display: block;
+    }
+    li:hover{
+        background-color: rgb(223, 217, 217);
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 25px 5px;
+        margin: 50px 80px 50px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card__imagen {
+        width: 250px;
+        height: 150px;
+        margin: 0px 20px;
+        border-radius: 30px; 
+        padding-bottom: 25px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card__texto {
+        margin: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .diplomas__flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .diploma__img {
+        border: 2px solid black;
+        height: 150px;
+    }
+    .ubicacion__textos {
+        background-color: rgb(231, 243, 233);
+        border-radius: 10px;
+        padding: 5px;
+        border: 2px black solid;
+    }
+    .grid__maps {
+        grid-area: maps;
+        padding: 10px;
+        background-color: rgb(233, 194, 233);
+    }
+    .card__mapa {
+        width: 300px;
+        height: 150px;
+        border-radius: 30px;
+        margin: 50px 1px; 
+    }
+    .ubicacion__titulo {
+        font-size: xx-large;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    .grid__index{
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "cabeza   cabeza   cabeza"
+        "card     card     card"
+        "diplomas diplomas diplomas"
+        "maps     maps     maps"
+        "pie      pie      pie"
+        ;
+    }
+    header{
+        background-color: violet;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: 2px solid;
+    }
+    .barra__lista {
+        list-style-type: none;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        font-weight: bolder;
+    }
+    .barra__lista a{
+        display: block;
+        color: black;
+    }
+    .lista__margen{
+        margin: 1px;
+        border: 2px solid;
+        background-color: bisque;
+    }
+    .card {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 25px 5px;
+        margin: 50px 35px 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card__imagen {
+        width: 250px;
+        height: 150px;
+        margin: 0px 20px;
+        border-radius: 30px; 
+        padding-bottom: 25px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card__texto {
+        margin: 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .diplomas__flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .diploma__img {
+        border: 2px solid black;
+        height: 150px;
+    }
+    .ubicacion__textos {
+        background-color: rgb(231, 243, 233);
+        border-radius: 10px;
+        padding: 5px;
+        border: 2px black solid;
+    }
+    .grid__maps {
+        grid-area: maps;
+        padding: 10px;
+        background-color: rgb(233, 194, 233);
+    }
+    .card__mapa {
+        width: 300px;
+        height: 150px;
+        border-radius: 30px;
+        margin: 50px 1px; 
+    }
+    .ubicacion__titulo {
+        font-size: xx-large;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:1025px){
+    .grid__index{
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "cabeza   cabeza"
+        "card     card"
+        "diplomas diplomas"
+        "maps     maps"
+        "pie      pie"
+        ;
+    }
+    header{
+        background-color: violet;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        border: 2px solid;
+    }
+    .card {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 25px 5px;
+        margin: 50px 5px 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card__mapa {
+        width: 350px;
+        height: 250px;
+        border-radius: 30px;
+        margin: 50px 1px; 
+    }
+    .ubicacion__titulo {
+        font-size: xx-large;
+        text-align: center;
+    }
+}
