@@ -13,11 +13,11 @@
 </head>
 
 <body>
-
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Logo</a>
+        <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo_peluqueria.jpeg"
+            class="logo__estetica"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,22 +28,23 @@
               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="galeria.html">Galeria</a>
+              <a class="nav-link active" href="galeria.html">Galeria</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="profesionales.html" id="navbarDropdown" role="button"
+              <a class="nav-link active dropdown-toggle" href="profesionales.html" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Profesionales
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu nav__drop" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="peluqueria.html">Peluquería</a></li>
                 <li><a class="dropdown-item" href="barberia.html">Barbería</a></li>
                 <li><a class="dropdown-item" href="unias.html">Uñas</a></li>
-                <li><a class="dropdown-item" href="maquillaje_y_cejas.html">Maquillaje</a></li>
+                <li><a class="dropdown-item" href="maquillaje_y_cejas.html">Maquillaje</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+              <a class="nav-link active" href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -54,8 +55,21 @@
 
 
   <footer>
-
+    <nav class="navbar navbar-light">
+      <div class="container d-flex">
+        <a class="navbar-brand" href="#">
+          <img class="icons" src="../imagenes/instagram.png" alt="" width="60" height="50">
+        </a>
+        <a class="navbar-brand" href="#">
+          <img class="icons" src="../imagenes/facebook.png" alt="" width="60" height="50">
+        </a>
+        <a class="navbar-brand" href="#">
+          <img class="icons" src="../imagenes/youtube.png" alt="" width="60" height="50">
+        </a>
+      </div>
+    </nav>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
