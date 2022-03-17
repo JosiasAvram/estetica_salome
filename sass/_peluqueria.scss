@@ -1,0 +1,9 @@
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    .peluquera {
+        @extend .profesionales;
+        @include size (320px, 450px);
+        margin: 2em;
+    }
+}

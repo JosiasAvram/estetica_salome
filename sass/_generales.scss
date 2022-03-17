@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $colorFondo;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    header {
+        background-color: $colorHyf;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%
+    }
+    footer {
+        width: 100%;
+        height: 10rem;
+        background-color: $colorHyf;
+        margin-top: auto;
+    }
+}
+.title {
+    font-size: 6em;
+    font-family: 'Sansita Swashed', cursive;
+}
+.profesionales {
+    border-radius: 3em;
+}
+@mixin size ($whidth, $heigth){
+    width: $whidth;
+    height: $heigth;
+    border: 1px solid black;
+}
+

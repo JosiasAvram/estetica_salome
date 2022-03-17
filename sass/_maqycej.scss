@@ -1,0 +1,5 @@
+.maquilladora {
+    @extend .profesionales;
+    @include size (520px, 350px);
+    margin: 2em;
+}

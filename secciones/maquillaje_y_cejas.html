@@ -52,12 +52,59 @@
     <h1 class="title">Centro de Estética Salomé</h1>
   </header>
 
-  <section>
-    <article>
-      <div>
-        <img src="../imagenes/maquilladora.jpg" alt="">
+  <section class="container-fluid">
+    <article class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <img class="maquilladora" src="../imagenes/maquilladora.jpg" alt="Elementos de peluqueria" />
       </div>
     </article>
+  </section>
+
+  <section>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            <strong>SOCIAL</strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            El maquillaje social es un estilo nuevo que tiene como objetivo destacar nuestra belleza y facciones logrando un equilibrio con el look que vayamos a usar. Pero, ¿por qué es social? Se le llama social porque lo ideal es lucirlo para eventos sociales dónde nos sacaremos muchas fotos y compartiremos con mucha gente.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            <strong>PROFESIONAL</strong>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            El maquillaje profesional cubre una amplia variedad de doctrinas profesionales. Los maquilladores profesionales deben conocer tanto la utilización de productos de distintas marcas como técnicas de ojos (sombras, pestañas), labios, tratamiento de la piel (base, polvos), etc.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <strong>PERFILADO DE CEJAS</strong>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            El perfilado no es afinar, ni depilar en exceso, es diseñar, darle una arquitectura a la mirada, que en combinación con un buen maquillaje para cejas, potencie la identidad y personalidad de nuestras cejas aportando frescura y naturalidad a tu mirada.
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
