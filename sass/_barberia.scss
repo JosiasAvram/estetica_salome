@@ -1,5 +1,5 @@
 .barbero {
     @extend .profesionales;
-    @include size (520px, 450px);
-    margin: 2em;
+    @include size (300px, 250px);
+    margin: 1em;
 }

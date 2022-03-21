@@ -4,12 +4,6 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    .card__mapa {
-        width: 650px;
-        height: 350px;
-        border-radius: 30px;
-        margin: 50px 1px;
-    }
     .ubicacion__textos {
         background-color: rgb(231, 243, 233);
         border-radius: 15px;
@@ -23,4 +17,10 @@
             }
         }
     }
+}
+.card__mapa {
+    width: 650px;
+    height: 350px;
+    border-radius: 30px;
+    margin: 50px 1px;
 }
