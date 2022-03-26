@@ -23,7 +23,13 @@ ul li:hover ul {
 li a:hover{
     background: rgb(228, 222, 222);
 }
-
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5em;
+    align-items: center;
+}
 @media (max-width: 1200px) {
 
     .title {
@@ -91,6 +97,16 @@ li a:hover{
         font-size: 3.5em;
         padding: 5px;
         text-align: center;
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aumento {
+        height: 200px;
+        width: 200px;
+        padding: 0.5em;
     }
     .ubicacion__textos {
         margin-bottom: 1em;
